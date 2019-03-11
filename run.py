@@ -5,6 +5,11 @@ from model import Products, SearchProducts, db
 
 db.connect()
 
+def parse_file():
+    _file = Path('./input.txt').read_text()
+    rows = _file.split('\n')
+    return tuple(do_query(r) for r in rows)
+
 
 def do_query(terms: str):
     query = (
@@ -16,9 +21,9 @@ def do_query(terms: str):
     )
     return query
 
+if __name__ == '__main__':
+    results = parse_file()
 
-query = do_query('fat face shirt check')
-
-
-for row in query:
-    print(row.rank, row.product, row.brand)
+    for r in results:
+        for row in r:
+            print('{}, {}, {}'.format(row.rank, row.product, row.brand))
