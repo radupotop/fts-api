@@ -1,4 +1,5 @@
 All commands are run within `venv`.
+I used Python 3.7.2.
 
 
 ## Building and Usage
