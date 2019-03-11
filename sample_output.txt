@@ -1,0 +1,45 @@
+1
+-15.907771634054619, 4838, Jelly Time Only watch yellow, Toywatch
+2
+-13.279451827799459, 38097, ASOS Premium Washed Camo Skinny Jeans, Asos
+-13.279451827799459, 21883, ASOS PETITE Rich Indigo Skinny Jeans, Asos
+-13.279451827799459, 40267, ASOS PETITE Silver Grey Skinny Jeans, Asos
+-13.279451827799459, 50698, ASOS PREMIUM Tuxedo Tab Skinny Jeans, Asos
+-13.279451827799459, 41401, ASOS CURVE Foil Armour Skinny Jeans, Asos
+-14.061668390138992, 41460, ASOS Side Zip Skinny Jeans, Asos
+-14.061668390138992, 19584, ASOS Lace Up Skinny Jeans, Asos
+-14.945290265992696, 19579, ASOS Diamante Skinny Jeans, Asos
+-14.945290265992696, 50657, ASOS Skinny Carrot Jeans, Asos
+3
+4
+-3.880405295236556, 43301, Ralph Lauren Childrenswear Infant Girls' Woven Floral Dress - Sizes 9-24 Months, Ralph Lauren Childrenswear
+-4.050955933550211, 17845, Winter Kate Devi Dress in Silk Chiffon Floral Print with Blouson Sleeves, Winter Kate
+-4.050955933550211, 46239, Splendid Littles Infant Girls' Ditsy Floral Dress and Bloomers - Sizes 3-24 months, Splendid
+-4.237187790088907, 25030, Johnny Was Los Angeles Plus Size "Laura" Floral-Embroidered Jersey Dress, Johnny Was
+-4.441367786623493, 32688, Herve Leger Ophelia Jacquard-Stripe and Floral-Print Dress, BCBG Max Azria
+-4.441367786623493, 25589, John Lewis Women Full Skirted Floral Printed Prom Dress, John Lewis Women
+-4.666221916766993, 25618, John Lewis Women Floral Print Silk Maxi Dress, John Lewis Women
+-4.666221916766993, 59607, Chocolate brown floral print two-in-one dress, rocha.john Rocha
+-4.666221916766993, 48681, Holly Willoughby Ditsy Floral and Spot Print Tea Dress, Holly Willoughby
+-4.666221916766993, 69911, Aqua Silk-Blend Anorak and Floral-Print Strapless Peplum Dress, Aqua
+5
+6
+-34.023549285491285, 44050, Perforated Runway Duffel Bag, Prada
+7
+-8.063855674318615, 8606, Plaid Woven Top with Sequins, Guess
+-8.063855674318615, 8599, Printed Top with Sequin Trim, Guess
+-8.650223320675224, 36544, Aviation Crossbody Top Zip, Guess
+-8.650223320675224, 26418, Jilly Top Zip Crossbody, Guess
+-8.834756676524332, 26015, GUESS Kids Girls' "Love Guess" Stripe Tank Top - Sizes S-XL, Guess
+-9.32855420800475, 12623, GbyM Silk Top, Guess
+-9.32855420800475, 26393, Rumer Fringe Top, Guess
+-9.32855420800475, 18892, Solid Barb Top, Guess
+-9.32855420800475, 11170, Ruffle Babydoll Top, Guess
+-9.32855420800475, 8957, Marilyn Corset Top, Guess
+8
+-11.721430843219531, 22604, Ralph Lauren Childrenswear Toddler Boys' Fairisle Sweater Vest - Sizes 2T-4T, Ralph Lauren Childrenswear
+-11.721430843219531, 2042, Ralph Lauren Childrenswear Toddler Boys' "Ascent" Down Vest - Sizes 2T-4T, Ralph Lauren Childrenswear
+-11.775939434329313, 15244, Fair Isle knitted sweater vest, Polo Ralph Lauren
+-12.166127092400183, 58504, Ralph Lauren Childrenswear Toddler Girls' Plain Vest - Sizes 2T-4T, Ralph Lauren Childrenswear
+-14.351666735605656, 26907, RLX Ralph Lauren Ocean Down Vest, RLX Ralph Lauren
+-14.351666735605656, 26763, RLX Ralph Lauren AC Targa Vest, RLX Ralph Lauren
