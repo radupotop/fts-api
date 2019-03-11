@@ -1,10 +1,10 @@
 import csv
-from model import db, Products
+from model import db, Products, SearchProducts
 
 
 def build_db():
     db.connect()
-    db.create_tables((Products,))
+    db.create_tables((Products, SearchProducts))
 
 
 def import_db():
@@ -15,20 +15,17 @@ def import_db():
                 Products.create(orig_id=row[0], product=row[1], brand=row[2])
 
 
-def create_virt_table(drop: bool):
+def create_virt_table():
     '''
     Create virtual table with FTS5 search.
     '''
     db.connect()
-    if drop:
-        db.execute_sql('DROP TABLE search_products')
-    db.execute_sql('CREATE VIRTUAL TABLE search_products USING FTS5(fk, product_brand)')
     db.execute_sql(
-        'INSERT INTO search_products SELECT id, product || " " || brand FROM products'
+        'INSERT INTO searchproducts SELECT product || " " || brand FROM products'
     )
 
 
 if __name__ == '__main__':
-    # build_db()
-    # import_db()
-    create_virt_table(True)
+    build_db()
+    import_db()
+    create_virt_table()

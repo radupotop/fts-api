@@ -1,6 +1,7 @@
 import peewee as pw
+from playhouse.sqlite_ext import FTS5Model, SearchField, SqliteExtDatabase
 
-db = pw.SqliteDatabase('products.db')
+db = SqliteExtDatabase('products.db')
 
 
 class BaseModel(pw.Model):
@@ -13,9 +14,13 @@ class Products(BaseModel):
     product = pw.CharField()
     brand = pw.CharField()
 
-class SearchProducts(BaseModel):
+
+class SearchProducts(FTS5Model):
     '''
     Virtual table with FTS5.
     '''
-    product_fk = pw.ForeignKeyField(Products, backref='search')
-    product_brand = pw.CharField()
+    # The `rowid` field is created automatically
+    product_brand = SearchField()
+
+    class Meta:
+        database = db
