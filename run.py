@@ -6,6 +6,9 @@ db.connect()
 
 
 def parse_file():
+    '''
+    Parse input file with query terms.
+    '''
     _file = Path('./input.txt').read_text()
     rows = _file.split('\n')
     return tuple(do_query(r) for r in rows)
@@ -25,7 +28,7 @@ def do_query(terms: str):
     return query
 
 
-if __name__ == '__main__':
+def run_all():
     results = parse_file()
 
     for idx, r in enumerate(results):
@@ -34,3 +37,7 @@ if __name__ == '__main__':
             print(
                 '{}, {}, {}, {}'.format(row.score, row.orig_id, row.product, row.brand)
             )
+
+
+if __name__ == '__main__':
+    run_all()
