@@ -1,4 +1,5 @@
 All commands are run within `venv`.
+
 I used Python 3.7.2.
 
 
@@ -28,3 +29,8 @@ These tables are created in `build.py`.
 The Products table is build from the CSV file, while the SearchProducts is populated from the Products table.
 
 `run.py` handles executing the FTS query, and uses Okapi BM25 for ranking.
+
+
+## Author
+
+Radu Potop <radu@wooptoo.com>
