@@ -28,6 +28,9 @@ def do_query(terms: str):
 if __name__ == '__main__':
     results = parse_file()
 
-    for r in results:
+    for idx, r in enumerate(results):
+        print(idx + 1)
         for row in r:
-            print('{}, {}, {}'.format(row.score, row.product, row.brand))
+            print(
+                '{}, {}, {}, {}'.format(row.score, row.orig_id, row.product, row.brand)
+            )
