@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from model import Products, SearchProducts, db
-
+from model import SQL, Products, SearchProducts, db
 
 db.connect()
+
 
 def parse_file():
     _file = Path('./input.txt').read_text()
@@ -12,18 +12,22 @@ def parse_file():
 
 
 def do_query(terms: str):
+    '''
+    Do FTS query, use Okapi BM25 ranking.
+    '''
     query = (
-        Products.select(Products, SearchProducts.rank())
+        Products.select(Products, SearchProducts.bm25().alias('score'))
         .join(SearchProducts, on=(Products.id == SearchProducts.rowid))
         .where(SearchProducts.match(terms))
-        .order_by(SearchProducts.rank())
+        .order_by(SQL('score').desc())
         .limit(10)
     )
     return query
+
 
 if __name__ == '__main__':
     results = parse_file()
 
     for r in results:
         for row in r:
-            print('{}, {}, {}'.format(row.rank, row.product, row.brand))
+            print('{}, {}, {}'.format(row.score, row.product, row.brand))

@@ -1,5 +1,5 @@
 import peewee as pw
-from playhouse.sqlite_ext import FTS5Model, SearchField, SqliteExtDatabase
+from playhouse.sqlite_ext import FTS5Model, SearchField, SqliteExtDatabase, SQL
 
 db = SqliteExtDatabase('products.db')
 
