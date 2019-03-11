@@ -15,17 +15,20 @@ def import_db():
                 Products.create(orig_id=row[0], product=row[1], brand=row[2])
 
 
-def create_virt_table():
+def create_virt_table(drop: bool):
     '''
     Create virtual table with FTS5 search.
     '''
     db.connect()
-    # db.execute_sql('DROP TABLE search_products')
-    db.execute_sql('CREATE VIRTUAL TABLE search_products USING FTS5(product, brand)')
-    db.execute_sql('INSERT INTO search_products SELECT product, brand FROM products')
+    if drop:
+        db.execute_sql('DROP TABLE search_products')
+    db.execute_sql('CREATE VIRTUAL TABLE search_products USING FTS5(fk, product_brand)')
+    db.execute_sql(
+        'INSERT INTO search_products SELECT id, product || " " || brand FROM products'
+    )
 
 
 if __name__ == '__main__':
-    build_db()
-    import_db()
-    create_virt_table()
+    # build_db()
+    # import_db()
+    create_virt_table(True)
