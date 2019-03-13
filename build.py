@@ -16,7 +16,6 @@ def import_db():
 
 
 def populate_virt_table():
-    db.connect()
     db.execute_sql(
         'INSERT INTO searchproducts SELECT product || " " || brand FROM products'
     )
